@@ -32,8 +32,9 @@ body {
 
 /* Logo de la navbar */
 .navbar-logo {
+  font-family: 'Montserrat', sans-serif;
   font-size: 24px;
-  font-weight: bold;
+  font-weight: 600;
   text-decoration: none;
   color: white;
 }
@@ -116,8 +117,9 @@ body {
 
 /* Título principal centrado */
 .main-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
   font-size: 2rem;
-  text-align: center;
 }
 
 /* GALERÍA DE CORTES */
@@ -135,10 +137,10 @@ body {
 
 /* Estilo del párrafo que indica el nombre del corte */
 .gallery-item p {
-  font-size: 18px;
-  margin-bottom: 10px;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  font-size: 1rem;
 }
-
 /* Contenedor para agrupar dos imágenes juntas */
 .image-pair {
   display: flex;
@@ -149,7 +151,7 @@ body {
 /* Estilo de las imágenes en la galería */
 .image-pair img {
   width: 45%;
-  height: auto;
+  height: 250px;
   border-radius: 10px;
   box-shadow: 0px 10px 30px rgba(0, 0, 0, 0.2);
 }
@@ -356,3 +358,77 @@ body {
 }
 
 
+/* Footer General */
+.footer {
+  background-color: #373535;
+  color: #fff;
+  padding: 20px 10px;
+  font-family: 'Lato', sans-serif; /* Fuente moderna para el footer */
+}
+
+/* Contenedor principal del footer para alinear elementos */
+.footer-container {
+  max-width: 1200px;
+  margin: auto;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Logo o nombre del footer */
+.footer-logo a {
+  font-family: 'Montserrat', sans-serif; /* Usamos Montserrat para el logo, para darle contraste */
+  font-size: 1.8rem;
+  color: #fff;
+  text-decoration: none;
+}
+
+/* Navegación del footer */
+.footer-nav ul {
+  list-style: none;
+  display: flex;
+  gap: 15px;
+  margin: 0;
+  padding: 0;
+}
+
+.footer-nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease;
+}
+
+.footer-nav ul li a:hover {
+  color: #25d366; /* Color de acento al pasar el cursor */
+}
+
+/* Información de contacto y derechos */
+.footer-contact {
+  font-size: 0.9rem;
+  text-align: right;
+}
+
+.footer-contact a {
+  color: #fff;
+  text-decoration: none;
+  border-bottom: 1px solid transparent;
+  transition: border-bottom 0.3s ease;
+}
+
+.footer-contact a:hover {
+  border-bottom: 1px solid #25d366;
+}
+
+/* Adaptación para móviles */
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 10px;
+  }
+  .footer-contact {
+    text-align: center;
+  }
+}
