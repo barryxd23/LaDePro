@@ -15,18 +15,18 @@ body {
 
 /* ESTILOS PARA LA NAVBAR */
 /* Contenedor de la barra de navegación */
+
+
 .navbar {
-  background: rgba(37, 37, 37, 0.85); /* Fondo negro con opacidad */
+  background-color: #00000000;
+  background: rgba(0, 0, 0, 0.828); /* Fondo negro con opacidad */
   backdrop-filter: blur(8px);       /* Desenfoque para un efecto "glassmorphism" */
   color: white;
   padding: 10px 20px;
-  position: fixed;   /* Fija el navbar en la parte superior */
-  width: 100%;
+  position: relative;
   z-index: 1000;
   transition: background 0.3s ease;
 }
-
-
 /* Contenedor interno para alinear elementos */
 .navbar-container {
   display: flex;
@@ -89,7 +89,9 @@ body {
     display: none;
     flex-direction: column;
     width: 100%;
-    background-color: #444;
+    background-color: #00000000;
+    background: rgba(0, 0, 0, 0.828); /* Fondo negro con opacidad */
+    backdrop-filter: blur(8px); 
     position: absolute;
     top: 60px;
     left: 0;
