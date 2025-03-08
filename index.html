@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>La de Pro - Barbería</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="navbar-container">
+      <a href="index.html" class="navbar-logo">La de Pro</a>
+      <button class="navbar-toggle" aria-label="Abrir menú">
+        <span class="navbar-toggle-icon">&#9776;</span> <!-- Ícono de hamburguesa -->
+      </button>
+      <ul class="navbar-menu">
+        <li><a href="index.html" >Modelo de cortes</a></li>
+        <li><a href="citas.html">Saca tu cita</a></li>
+        <li><a href="#nosotros">Más de nosotros</a></li>
+      </ul>
+    </div>
+  </nav>
+
+
+  <!-- Carrusel de Imágenes -->
+<section class="carrusel">
+    <div class="carrusel-contenedor">
+      <!-- Imágenes del carrusel -->
+      <div class="carrusel-slide">
+        <img src="imgs/cortando1.webp" alt="Corte de pelo 1">
+        <div class="carrusel-texto">
+          <h2>En La de Pro, transformamos estilos con precisión y pasión. ¡Tu mejor look comienza aquí!</h2>
+        </div>
+      </div>
+      <div class="carrusel-slide">
+        <img src="imgs/cortando2.jpg" alt="Corte de pelo 1">
+        <div class="carrusel-texto">
+          <h2>Expertos en cortes modernos y clásicos. ¡Déjanos cuidar de tu estilo!</h2>
+        </div>
+      </div>
+      <div class="carrusel-slide">
+        <img src="imgs/cortando3.jpg" alt="Corte de pelo 1">
+        <div class="carrusel-texto">
+          <h2>Cortes que hablan por sí mismos. ¡Ven y descubre por qué somos los mejores!</h2>
+        </div>
+      </div>
+    </div>
+  
+    <!-- Botones de navegación -->
+    <button class="carrusel-btn carrusel-btn-izquierda">&lt;</button>
+    <button class="carrusel-btn carrusel-btn-derecha">&gt;</button>
+  </section>
+
+
+  <!-- Página Principal: Modelo de Cortes -->
+  <main class="main-content">
+    <h1 class="main-title">Modelo de Cortes</h1> <!-- Título centrado -->
+    <section id="modelos">
+      <!-- Categoría: Cortes Fade -->
+      <h2>Cortes Fade</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <p>Low Fade</p>
+          <div class="image-pair">
+            <img src="imgs/lowfade1.jpg" alt="Low Fade 1">
+            <img src="imgs/lowfade2.jpg" alt="Low Fade 2">
+          </div>
+        </div>
+        <div class="gallery-item">
+            <p>Mid Fade</p>
+            <div class="image-pair">
+              <img src="imgs/midfade1.jpg" alt="Mid Fade 1">
+              <img src="imgs/midfade2.jpg" alt="Mid Fade 2">
+            </div>
+          </div>
+        <div class="gallery-item">
+          <p>Taper Fade</p>
+          <div class="image-pair">
+            <img src="imgs/taperfade1.jpg" alt="Taper Fade 1">
+            <img src="imgs/taperfade2.png" alt="Taper Fade 2">
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría: Cortes Clásicos y Modernos -->
+      <h2>Cortes Clásicos y Modernos</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <p>Buzz Cut</p>
+          <div class="image-pair">
+            <img src="imgs/buzzcut1.jpg" alt="Buzz Cut 1">
+            <img src="imgs/buzcut2.jpg" alt="Buzz Cut 2">
+          </div>
+        </div>
+        <div class="gallery-item">
+          <p>Crew Cut</p>
+          <div class="image-pair">
+            <img src="imgs/crewcut1.jpg" alt="Crew Cut 1">
+            <img src="imgs/crewcut2.jpg" alt="Crew Cut 2">
+          </div>
+        </div>
+        <div class="gallery-item">
+          <p>Mullet</p>
+          <div class="image-pair">
+            <img src="imgs/mullet1.jpg" alt="Mullet 1">
+            <img src="imgs/mullet2.jpg" alt="Mullet 2">
+          </div>
+        </div>
+      </div>
+
+      <!-- Categoría: Cortes con Estilos Específicos -->
+      <h2>Cortes con Estilos Específicos</h2>
+      <div class="gallery">
+        <div class="gallery-item">
+          <p>Slick Back</p>
+          <div class="image-pair">
+            <img src="imgs/back1.jpg" alt="Slick Back 1">
+            <img src="imgs/back2.jpg" alt="Slick Back 2">
+          </div>
+        </div>
+        <div class="gallery-item">
+          <p>South of France</p>
+          <div class="image-pair">
+            <img src="imgs/france1.jpg" alt="South of France 1">
+            <img src="imgs/france2.jpg" alt="South of France 2">
+          </div>
+        </div>
+        <div class="gallery-item">
+          <p>Temple Fade</p>
+          <div class="image-pair">
+            <img src="imgs/temple1.jpg" alt="Temple Fade 1">
+            <img src="imgs/temple2.jpg" alt="Temple Fade 2">
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Botón flotante "Inicio" -->
+
+  <button id="inicio-btn" class="floating-btn" title="Volver al inicio">
+    <span class="arrow-up">&#8593;</span> <!-- Ícono de flecha hacia arriba -->
+  </button>
+
+  <script src="js/script.js"></script>
+
+
+
+
+
+
+</body>
+</html>
